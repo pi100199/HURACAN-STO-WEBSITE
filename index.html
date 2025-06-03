@@ -1,20 +1,21 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lamborghini Huracán STO</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
+    body, html {
       margin: 0;
       padding: 0;
-      background-color: #111;
+      font-family: 'Arial', sans-serif;
+      background: #111;
       color: white;
     }
 
-    .hero {
-      background: url('sto-hero.jpg') no-repeat center center/cover;
+    header {
+      background: url('https://cdn.motor1.com/images/mgl/0ANqv/s1/lamborghini-huracan-sto.jpg') no-repeat center center;
+      background-size: cover;
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -24,16 +25,16 @@
       padding: 0 20px;
     }
 
-    .hero h1 {
+    header h1 {
       font-size: 3em;
-      margin-bottom: 0.3em;
+      color: #f90;
       text-shadow: 2px 2px 10px #000;
     }
 
-    .hero p {
+    header p {
       font-size: 1.2em;
-      max-width: 600px;
-      text-shadow: 2px 2px 8px #000;
+      max-width: 700px;
+      text-shadow: 1px 1px 8px #000;
     }
 
     .btn {
@@ -58,55 +59,61 @@
     }
 
     h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
+      color: #f90;
       text-align: center;
+      margin-bottom: 20px;
     }
 
-    .features ul {
+    ul {
       list-style: none;
       padding: 0;
-      text-align: center;
     }
 
-    .features li {
-      padding: 12px 0;
+    ul li {
+      padding: 10px 0;
       border-bottom: 1px solid #333;
     }
 
-    .gallery .images {
+    .gallery {
       display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
     }
 
     .gallery img {
       width: 100%;
-      max-width: 300px;
-      border-radius: 8px;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
       transition: transform 0.3s ease;
     }
 
     .gallery img:hover {
-      transform: scale(1.05);
+      transform: scale(1.02);
     }
 
-    .contact form {
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    form {
       display: flex;
       flex-direction: column;
       gap: 15px;
     }
 
-    .contact input,
-    .contact textarea {
+    input, textarea {
       padding: 12px;
       font-size: 1em;
       border: none;
       border-radius: 5px;
     }
 
-    .contact button {
+    button {
       background: #f90;
       color: #000;
       padding: 12px;
@@ -117,7 +124,7 @@
       cursor: pointer;
     }
 
-    .contact button:hover {
+    button:hover {
       background: #e68a00;
     }
 
@@ -130,55 +137,54 @@
     }
 
     @media (max-width: 768px) {
-      .hero h1 {
+      header h1 {
         font-size: 2.2em;
       }
 
-      .gallery .images {
-        flex-direction: column;
-        align-items: center;
+      iframe {
+        height: 300px;
       }
     }
   </style>
 </head>
 <body>
 
-  <header class="hero">
+  <header>
     <h1>Lamborghini Huracán STO</h1>
-    <p>Born for the track. Made for the road.</p>
-    <a href="#features" class="btn">Explore More</a>
+    <p>Track-bred performance. Road-ready power. Experience the pinnacle of V10 engineering.</p>
+    <a href="#features" class="btn">Discover More</a>
   </header>
 
-  <section id="features" class="features">
-    <h2>Key Features</h2>
+  <section id="features">
+    <h2>Performance & Specs</h2>
     <ul>
-      <li>640 HP Naturally Aspirated V10 Engine</li>
-      <li>0-100 km/h in 3.0 seconds</li>
-      <li>Carbon Fiber Lightweight Design</li>
-      <li>Rear-Wheel Drive Performance</li>
-      <li>Aggressive Aerodynamics Package</li>
+      <li><strong>Engine:</strong> 5.2L Naturally Aspirated V10</li>
+      <li><strong>Power:</strong> 640 HP @ 8,000 rpm</li>
+      <li><strong>0–100 km/h:</strong> 3.0 seconds</li>
+      <li><strong>Top Speed:</strong> 310 km/h (192 mph)</li>
+      <li><strong>Drive:</strong> Rear-Wheel Drive</li>
+      <li><strong>Weight:</strong> 1,339 kg (2,952 lbs)</li>
+      <li><strong>Downforce:</strong> 53% more than Huracán Performante</li>
+      <li><strong>Brakes:</strong> Brembo CCM-R Carbon Ceramic</li>
     </ul>
   </section>
 
-  <section class="gallery">
-    <h2>Gallery</h2>
-    <div class="images">
-      <img src="sto1.jpg" alt="Lamborghini Huracán STO side view">
-      <img src="sto2.jpg" alt="Lamborghini Huracán STO rear view">
-      <img src="sto3.jpg" alt="Huracán STO on track">
+  <section id="gallery">
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+      <img src="https://cdn-ds.com/blogs-media/sites/94/2021/12/28115038/2021-Lamborghini-Huracan-STO-A_o.jpg" alt="Lamborghini Huracán STO side">
+      <img src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/97705/huracan-sto-exterior-rear-view.jpeg?isig=0&q=80" alt="Lamborghini Huracán STO rear">
+      <img src="https://pictures.dealer.com/l/lamborghinidallas/0034/c69e9c44c9d4b9787a198299cd66262dx.jpg?impolicy=downsize_bkpt&w=410" alt="Lamborghini Huracán STO interior">
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required/>
-      <input type="email" placeholder="Email Address" required/>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <section id="video">
+    <h2>Watch the Beast in Action</h2>
+    <iframe src="https://www.youtube.com/embed/z5f4xH7jqWE" allowfullscreen></iframe>
   </section>
 
+  <section id="contact">
+    <form>
   <footer>
     <p>&copy; 2025 Lamborghini. All rights reserved.</p>
   </footer>
